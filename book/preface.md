@@ -13,4 +13,4 @@ kernelspec:
 
 # Preface
 
-I've been teaching a course on the physics of waves, acoustics, and optics for several years, and in the process have come to realize it might be beneficial to have a book dedicated to this topic. 
+Motivation for writing the book.  Who the book is for, etc.
