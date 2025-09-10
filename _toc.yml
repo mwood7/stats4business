@@ -25,3 +25,4 @@ parts:
   - caption: Appendices
     chapters:
       - file: book/bibliography
+
