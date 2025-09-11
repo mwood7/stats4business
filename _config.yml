@@ -76,13 +76,13 @@ parse:
     - colon_fence
     - deflist
     - dollarmath
-    - html_admonition
-    - html_image
-    - linkify
-    - replacements
-    - smartquotes
-    - substitution
-    - tasklist
+    # - html_admonition
+    # - html_image
+    # - linkify
+    # - replacements
+    # - smartquotes
+    # - substitution
+    # - tasklist
     #- extension-1
     #- extension-2
 
