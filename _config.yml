@@ -96,7 +96,7 @@ parse:
 sphinx:
   extra_extensions:
    # - sphinxcontrib.tikz
-    - sphinx_exercise
+   # - sphinx_exercise
     - sphinx_inline_tabs
 
 
