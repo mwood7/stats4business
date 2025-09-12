@@ -93,11 +93,11 @@ parse:
 #   latex_documents:
 #     targetname: book.tex
 
-sphinx:
-  extra_extensions:
-   # - sphinxcontrib.tikz
-   # - sphinx_exercise
-    - sphinx_inline_tabs
+# sphinx:
+#   extra_extensions:
+#    # - sphinxcontrib.tikz
+#    # - sphinx_exercise
+#     - sphinx_inline_tabs
 
 
 
