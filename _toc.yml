@@ -20,6 +20,7 @@ parts:
     chapters:
       - file: book/chapter01
       - file: book/chapter02
+      - file: book/chapter03
       - file: book/markdown
       - file: book/notebooks
   - caption: Appendices
