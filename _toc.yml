@@ -21,8 +21,13 @@ parts:
       - file: book/chapter01
       - file: book/chapter02
       - file: book/chapter03
-      - file: book/markdown
-      - file: book/notebooks
+      - file: book/chapter04
+      - file: book/chapter05
+      - file: book/chapter06
+      - file: book/chapter07
+      - file: book/chapter08
+      - file: book/chapter09
+      - file: book/chapter10
   - caption: Appendices
     chapters:
       - file: book/bibliography
