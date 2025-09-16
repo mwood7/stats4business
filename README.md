@@ -2,6 +2,6 @@
 
 An Open-Source textbook for stats for biz students.
 
-## Important Stuff
+## Important Stuff Follows
 
 
