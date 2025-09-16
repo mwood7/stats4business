@@ -3,11 +3,17 @@ name: Deploy Jupyter Book
 on:
   push:
     branches:
-      - main  # change if you use 'master' or another branch
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
       - name: Checkout repo
@@ -16,18 +22,25 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
-          pip install -U pip
-          pip install jupyter-book ghp-import
+          python -m pip install --upgrade pip
+          pip install jupyter-book
 
-      - name: Build the book
+      - name: Build the Jupyter Book
         run: |
           jupyter-book clean .
           jupyter-book build .
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: _build/html
+
       - name: Deploy to GitHub Pages
-        run: |
-          ghp-import -n -p -f _build/html
+        uses: actions/deploy-pages@v1
