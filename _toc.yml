@@ -21,6 +21,8 @@ parts:
       - file: book/chapter01
       - file: book/chapter02
       - file: book/chapter03
+      - file: book/chapter04
+      - file: book/chapter05
   - caption: Appendices
     chapters:
       - file: book/bibliography
